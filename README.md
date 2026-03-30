@@ -75,27 +75,4 @@ python3 main.py broker \
   --keyfile server.key
 ```
 
-### Connect subscriber with TLS (development mode)
 
-```bash
-python3 main.py subscriber --host 127.0.0.1 --port 5555 --ssl --insecure --topics sports
-```
-
-### Connect publisher with TLS (development mode)
-
-```bash
-python3 main.py publisher --host 127.0.0.1 --port 5555 --ssl --insecure --topic sports --message "hello over tls"
-```
-
-Note: `--insecure` disables certificate verification and is only recommended for local development.
-
-## Help
-
-For full CLI options:
-
-```bash
-python3 main.py --help
-python3 main.py broker --help
-python3 main.py subscriber --help
-python3 main.py publisher --help
-```
